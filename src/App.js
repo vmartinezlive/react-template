@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {hot} from 'react-hot-loader';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <img src={require("./logo.svg")}></img>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -23,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(module)(App);
