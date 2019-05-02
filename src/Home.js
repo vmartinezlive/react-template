@@ -1,9 +1,13 @@
 import React from 'react';
+import styled from 'styled-components'
 
 function Home(){
+  const Something = styled.h1`
+    color: red;
+  `
   return(
     <div>
-      <h1>Welcome home</h1>
+      <Something>Welcome to the home component</Something>
     </div>
   )
 }
