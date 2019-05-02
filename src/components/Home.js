@@ -4,12 +4,17 @@ import styled from 'styled-components'
 function Home(){
   const Something = styled.h1`
   @keyframes pulse {
-    0%{color: green}
-    50%{color: red}
-    100%{color: green}
+    0%{color: hotpink}
+    50%{color: limegreen}
+    100%{color: hotpink}
   }
     animation: pulse 1s linear infinite;
     color: green;
+    &:hover {
+      cursor: pointer;
+      animation: none;
+      color: black;
+    }
   `
   return(
     <div>
