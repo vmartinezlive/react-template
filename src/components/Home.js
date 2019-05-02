@@ -3,7 +3,13 @@ import styled from 'styled-components'
 
 function Home(){
   const Something = styled.h1`
-    color: red;
+  @keyframes pulse {
+    0%{color: green}
+    50%{color: red}
+    100%{color: green}
+  }
+    animation: pulse 1s linear infinite;
+    color: green;
   `
   return(
     <div>
