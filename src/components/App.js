@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Error404 from './Error404';
 import Header from './Header';
 import Home from './Home';
