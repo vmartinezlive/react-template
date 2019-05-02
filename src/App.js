@@ -4,6 +4,9 @@ import './App.css';
 import {hot} from 'react-hot-loader';
 import styled from 'styled-components'
 import Error404 from './Error404';
+import Header from './Header';
+import Home from './Home';
+import { Switch, Route, withRouter } from 'react-router-dom';
 
 function App() {
   const Something = styled.h1`
@@ -11,22 +14,11 @@ function App() {
   `
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Something>TEST</Something>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <img src={require("./logo.svg")}></img>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route component={Error404}/>
+      </Switch>
     </div>
   );
 }
