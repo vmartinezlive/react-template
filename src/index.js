@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import { AppContainer } from 'react-hot-loader';
 import { HashRouter } from 'react-router-dom';
 //import * as serviceWorker from './serviceWorker';
@@ -20,7 +20,7 @@ const render = (Component) => {
 render(App);
 
 if (module.hot) {
-  module.hot.accept('./App', () => {
+  module.hot.accept('./components/App', () => {
     render(App);
   });
 }
