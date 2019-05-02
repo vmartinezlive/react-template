@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {hot} from 'react-hot-loader';
 import styled from 'styled-components'
+import Error404 from './Error404';
 
 function App() {
   const Something = styled.h1`
@@ -30,4 +31,4 @@ function App() {
   );
 }
 
-export default hot(module)(App);
+export default App;
