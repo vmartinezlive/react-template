@@ -3,14 +3,19 @@ import styled from 'styled-components'
 
 function Animation(){
   const Div = styled.div`
+  @keyframes noneNow {
+    0%{height: 100vh;}
+    100%{height: 0;}
+  }
   @keyframes slideUp {
-    0%{top: 0}
-    100%{top: -50vh}
+    0%{top: 0;}
+    100%{top: -50vh;}
   }
   @keyframes slideDown{
     0%{bottom: 0}
     100%{bottom: -50vh}
   }
+    animation: noneNow .1s linear forwards 4s;
     position: fixed;
     width: 100vw;
     height: 100vh;
