@@ -26,6 +26,10 @@ function Animation(){
       top: 0;
       background-color: white;
       height: 50vh;
+      img{
+        width: 100vw;
+        height: 100vh;
+      }
     }
     .bottom{
       animation: slideDown 2s linear forwards 2s;
@@ -35,6 +39,8 @@ function Animation(){
       background-color: white;
       bottom: 0;
       img{
+        width: 100vw;
+        height: 100vh;
         margin-top: -50vh;
       }
     }
