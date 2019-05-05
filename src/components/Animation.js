@@ -9,11 +9,13 @@ function Animation(){
   }
   @keyframes slideUp {
     0%{top: 0;}
-    100%{top: -50vh;}
+    1%{border-bottom: 1px solid black; box-shadow: 0px 20px 10px;}
+    100%{top: -55vh; border-bottom: 1px solid black; box-shadow: 0px 30px 10px;}
   }
   @keyframes slideDown{
     0%{bottom: 0}
-    100%{bottom: -50vh}
+    1%{border-top: 1px solid black; box-shadow: 0px -20px 10px;}
+    100%{bottom: -55vh; border-top: 1px solid black; box-shadow: 0px -30px 10px;}
   }
     animation: noneNow .1s linear forwards 4s;
     position: fixed;
